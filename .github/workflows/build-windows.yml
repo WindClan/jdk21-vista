@@ -25,38 +25,10 @@
 
 name: 'Build (windows)'
 
-on:
-  workflow_call:
-    inputs:
-      platform:
-        required: true
-        type: string
-      extra-conf-options:
-        required: false
-        type: string
-      make-target:
-        required: false
-        type: string
-        default: 'product-bundles test-bundles'
-      debug-levels:
-        required: false
-        type: string
-        default: '[ "debug", "release" ]'
-      msvc-toolset-version:
-        required: true
-        type: string
-      msvc-toolset-architecture:
-        required: true
-        type: string
-      configure-arguments:
-        required: false
-        type: string
-      make-arguments:
-        required: false
-        type: string
-  push:
-    branches: 
-    - master
+on: workflow_dispatch
+#  push:
+#    branches: 
+#    - master
 
 env:
   # These are needed to make the MSYS2 bash work properly

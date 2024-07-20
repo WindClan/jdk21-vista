@@ -22,8 +22,6 @@
  *
  */
 
-#define PSAPI_VERSION 1
-
 #include "precompiled.hpp"
 #include "utilities/globalDefinitions.hpp"
 #include "symbolengine.hpp"

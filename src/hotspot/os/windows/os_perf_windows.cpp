@@ -22,8 +22,6 @@
  *
  */
 
-#define PSAPI_VERSION 1
-
 #include "precompiled.hpp"
 #include "iphlp_interface.hpp"
 #include "jvm_io.h"

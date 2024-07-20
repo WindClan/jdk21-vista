@@ -25,6 +25,8 @@
 // Precompiled headers are turned off if the user passes
 // --disable-precompiled-headers to configure.
 
+#define PSAPI_VERSION 1
+
 #ifndef DONT_USE_PRECOMPILED_HEADER
 
 // These header files are included in at least 130 C++ files, as of

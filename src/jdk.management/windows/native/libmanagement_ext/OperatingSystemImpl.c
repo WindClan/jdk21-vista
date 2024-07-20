@@ -23,6 +23,8 @@
  * questions.
  */
 
+#define PSAPI_VERSION 1
+
 #include "jni.h"
 #include "jni_util.h"
 #include "jlong.h"

@@ -72,7 +72,7 @@ configure:4121: looking for aux files: config.guess config.sub
 configure:4134:  trying /d/git/jdk21-vista/make/autoconf/build-aux/
 configure:4163:   /d/git/jdk21-vista/make/autoconf/build-aux/config.guess found
 configure:4163:   /d/git/jdk21-vista/make/autoconf/build-aux/config.sub found
-configure:7019: Configuration created at Sat Jul 20 00:47:41 EDT 2024.
+configure:7019: Configuration created at Sat Jul 20 01:08:30 EDT 2024.
 configure:7028: checking for basename
 configure:7051: found /usr/bin/basename
 configure:7064: result: /usr/bin/basename
@@ -274,8 +274,136 @@ configure:50511: result: gnu
 configure:50536: checking that grep (/usr/bin/grep) -Fx handles empty lines in the pattern list correctly
 configure:50547: result: yes
 configure:50577: checking for unzip
-configure:50812: result: [not found]
-configure:51195: error: Could not find required tool for UNZIP
+configure:50805: result: /usr/bin/unzip
+configure:51218: checking for zip
+configure:51446: result: /usr/bin/zip
+configure:51859: checking for greadelf
+configure:52094: result: [not found]
+configure:51859: checking for readelf
+configure:52087: result: /usr/bin/readelf
+configure:52491: checking for dot
+configure:52726: result: [not found]
+configure:53123: checking for stat
+configure:53351: result: /usr/bin/stat
+configure:53755: checking for time
+configure:53763: result: time [builtin]
+configure:54387: checking for flock
+configure:54615: result: /usr/bin/flock
+configure:55021: checking for dtrace
+configure:55256: result: [not found]
+configure:55653: checking for gpatch
+configure:55888: result: [not found]
+configure:55653: checking for patch
+configure:55888: result: [not found]
+configure:56279: checking if date is a GNU compatible version
+configure:56283: result: yes
+configure:60129: checking bash version
+configure:60131: result: 5.2.26
+configure:60141: checking if bash supports pipefail
+configure:60145: result: yes
+configure:60152: checking if bash supports errexit (-e)
+configure:60156: result: yes
+configure:60222: checking for pkg-config
+configure:60261: result: no
+configure:60339: checking for default LOG value
+configure:60348: result: 
+configure:60642: checking for JMOD compression type
+configure:60720: result: zip-6, default
+configure:61021: checking if packaged modules are kept
+configure:61053: result: enabled, default
+configure:61408: checking for --with-build-user
+configure:61486: result: User, default
+configure:61843: checking for --with-jdk-rc-name
+configure:61921: result: OpenJDK Platform, default
+configure:62287: checking for --with-vendor-name
+configure:62365: result: N/A, default
+configure:62724: checking for --with-jdk-rc-company-name
+configure:62802: result: N/A, default
+configure:63162: checking for --with-vendor-url
+configure:63240: result: https://openjdk.org/, default
+configure:63606: checking for --with-vendor-bug-url
+configure:63684: result: https://bugreport.java.com/bugreport/, default
+configure:64050: checking for --with-vendor-vm-bug-url
+configure:64128: result: https://bugreport.java.com/bugreport/crash.jsp, default
+configure:64489: checking for --with-version-string
+configure:64564: result: <none>, default
+configure:65093: checking for --with-version-feature
+configure:65171: result: 21, default
+configure:65878: checking for --with-version-date
+configure:65956: result: 2024-07-16, default
+configure:66316: checking for --with-vendor-version-string
+configure:66377: result: <disabled>, default
+configure:66751: checking for --with-macosx-bundle-name-base
+configure:66829: result: OpenJDK, default
+configure:67193: checking for --with-macosx-bundle-id-base
+configure:67271: result: net.java.openjdk-internal, default
+configure:67640: checking for --with-macosx-bundle-build-version
+configure:67718: result: 0, default
+configure:67810: checking for version string
+configure:67812: result: 21.0.4-internal-adhoc.User.jdk21-vista
+configure:69736: checking for javac
+configure:69971: result: [not found]
+configure:70368: checking for java
+configure:70603: result: [not found]
+configure:71458: Found potential Boot JDK using well-known locations (in /c/progra~1/java/latest)
+configure:71467: Potential Boot JDK found at /c/progra~1/java/latest did not contain bin/java; ignoring
+configure:71458: Found potential Boot JDK using well-known locations (in /c/progra~1/java/jre1.8.0_421)
+configure:71473: Potential Boot JDK found at /c/progra~1/java/jre1.8.0_421 did not contain bin/javac; ignoring
+configure:71475: (This might be an JRE instead of an JDK)
+configure:71458: Found potential Boot JDK using well-known locations (in /c/progra~1/java/jdk-8.0.402.6-hotspot)
+configure:71705: Potential Boot JDK found at /c/progra~1/java/jdk-8.0.402.6-hotspot is incorrect JDK version (openjdk version "1.8.0_402" OpenJDK Runtime Environment (Temurin)(build 1.8.0_402-b06) OpenJDK 64-Bit Server VM (Temurin)(build 25.402-b06, mixed mode)); ignoring
+configure:71707: (Your Boot JDK version must be one of: 20 21)
+configure:71458: Found potential Boot JDK using well-known locations (in /c/progra~1/java/jdk-21.0.3.9-hotspot)
+configure:71771: checking for Boot JDK
+configure:71773: result: /c/progra~1/java/jdk-21~1.9-h
+configure:71775: checking Boot JDK version
+configure:71780: result: openjdk version "21.0.3" 2024-04-16 LTS OpenJDK Runtime Environment Temurin-21.0.3+9 (build 21.0.3+9-LTS) OpenJDK 64-Bit Server VM Temurin-21.0.3+9 (build 21.0.3+9-LTS, mixed mode, sharing)
+configure:77431: checking for java [Boot JDK]
+configure:77441: result: $BOOT_JDK/bin/java
+configure:77983: checking for javac [Boot JDK]
+configure:77993: result: $BOOT_JDK/bin/javac
+configure:78535: checking for javadoc [Boot JDK]
+configure:78545: result: $BOOT_JDK/bin/javadoc
+configure:79087: checking for jar [Boot JDK]
+configure:79097: result: $BOOT_JDK/bin/jar
+configure:79638: checking if Boot JDK jar supports --date=TIMESTAMP
+configure:79640: result: true
+configure:79658: checking if Boot JDK is 32 or 64 bits
+configure:79660: result: 64
+configure:79664: checking for local Boot JDK Class Data Sharing (CDS)
+Check if jvm arg is ok: -XX:+UnlockDiagnosticVMOptions -XX:-VerifySharedSpaces -XX:SharedArchiveFile=/d/git/jdk21-vista/build/windows-x86_64-server-release/configure-support/classes.jsa
+Command: /d/git/jdk21-vista/build/windows-x86_64-server-release/fixpath exec /c/progra~1/java/jdk-21~1.9-h/bin/java.exe -XX:+UnlockDiagnosticVMOptions -XX:-VerifySharedSpaces -XX:SharedArchiveFile=/d/git/jdk21-vista/build/windows-x86_64-server-release/configure-support/classes.jsa -version
+configure:79688: result: yes, created
+configure:79877: checking for Build JDK
+configure:79879: result: yes, will use output dir
+configure:79922: checking for docs-reference JDK
+configure:80125: result: no, using interim javadoc for the docs-reference targets
+configure:80157: checking what source date to use
+configure:80171: result: 1721452140, from 'current' (default)
+configure:80475: checking if we should build headless-only (no GUI)
+configure:80513: result: disabled, default
+configure:80770: checking if linker should clean out unused code (linktime-gc)
+configure:80808: result: disabled, default
+configure:80858: checking for graphviz dot
+configure:80864: result: no, cannot generate full docs
+configure:80869: checking for pandoc
+configure:80875: result: no, cannot generate full docs
+configure:81083: checking for --enable-full-docs
+configure:81121: result: disabled, from default 'auto'
+configure:81177: checking for cacerts file
+configure:81180: result: default
+configure:81203: checking for cacerts source
+configure:81206: result: default
+configure:81411: checking for --enable-unlimited-crypto
+configure:81443: result: enabled, default
+configure:81557: checking for jni library path
+configure:81560: result: default
+configure:81926: checking if static build is available
+configure:81932: result: no
+configure:81939: checking if static build is enabled
+configure:81977: result: disabled, default
+configure:82832: Using default toolchain microsoft (Microsoft Visual Studio)
+configure:84420: error: Cannot locate a valid Visual Studio installation
 
 ## ---------------- ##
 ## Cache variables. ##
@@ -585,16 +713,16 @@ AR_OUT_OPTION=''
 AS=''
 ASAN_ENABLED=''
 ASFLAGS_DEBUG_SYMBOLS=''
-AUTOCONF='/usr/bin/autoconf'
+AUTOCONF=''
 AWK='/usr/bin/gawk'
 BASENAME='/usr/bin/basename'
 BASH='/usr/bin/bash'
-BASH_ARGS=''
+BASH_ARGS=' -o pipefail -e'
 BASIC_ASFLAGS=''
 BOOTCYCLE_JVM_ARGS_BIG=''
-BOOT_JDK=''
-BOOT_JDK_JAR_SUPPORTS_DATE=''
-BOOT_JDK_SOURCETARGET=''
+BOOT_JDK='/c/progra~1/java/jdk-21~1.9-h'
+BOOT_JDK_JAR_SUPPORTS_DATE='true'
+BOOT_JDK_SOURCETARGET='-source 20 -target 20 -Xlint:-options'
 BRANCH_PROTECTION_CFLAGS=''
 BUILDJDK_JAVA_FLAGS_SMALL=''
 BUILD_AR=''
@@ -606,7 +734,7 @@ BUILD_CXX=''
 BUILD_ENV='dev'
 BUILD_FAILURE_HANDLER=''
 BUILD_ICECC=''
-BUILD_JDK=''
+BUILD_JDK='$(JDK_OUTPUTDIR)'
 BUILD_JTREG_TEST_THREAD_FACTORY=''
 BUILD_LD=''
 BUILD_LDCXX=''
@@ -640,25 +768,25 @@ CLASSPATH=''
 CMD='/c/Windows/System32/cmd.exe'
 CMP='/usr/bin/cmp'
 CODESIGN=''
-COMPANY_NAME=''
-COMPATIBLE_CDS_ALIGNMENT_DEFAULT=''
+COMPANY_NAME='N/A'
+COMPATIBLE_CDS_ALIGNMENT_DEFAULT='false'
 COMPILER_BINDCMD_FILE_FLAG=''
 COMPILER_COMMAND_FILE_FLAG=''
 COMPILER_SUPPORTS_TARGET_BITS_FLAG=''
 COMPILER_TARGET_BITS_FLAG=''
 COMPILE_TYPE='native'
 COMPILE_WITH_DEBUG_SYMBOLS=''
-COMPRESS_JARS=''
+COMPRESS_JARS='false'
 CONFIGURESUPPORT_OUTPUTDIR='/d/git/jdk21-vista/build/windows-x86_64-server-release/configure-support'
 CONFIGURE_COMMAND_LINE=''
 CONFIGURE_START_DIR='/d/git/jdk21-vista'
 CONF_NAME='windows-x86_64-server-release'
-COPYRIGHT_YEAR=''
+COPYRIGHT_YEAR='2024'
 COPY_DEBUG_SYMBOLS=''
 CP='/usr/bin/cp'
 CPP=''
 CPPFLAGS=''
-CREATE_BUILDJDK=''
+CREATE_BUILDJDK='false'
 CUPS_CFLAGS=''
 CUT='/usr/bin/cut'
 CXX=''
@@ -681,10 +809,10 @@ C_O_FLAG_NONE=''
 C_O_FLAG_NORM=''
 C_O_FLAG_SIZE=''
 DATE='/usr/bin/date'
-DATE_WHEN_CONFIGURED='Sat Jul 20 00:47:41 EDT 2024'
+DATE_WHEN_CONFIGURED='Sat Jul 20 01:08:30 EDT 2024'
 DEBUG_LEVEL='release'
 DEFAULT_LOG=''
-DEFAULT_MAKE_TARGET=''
+DEFAULT_MAKE_TARGET='exploded-image'
 DEFINE_CROSS_COMPILE_ARCH=''
 DEFS=''
 DEVKIT_LIB_DIR=''
@@ -707,19 +835,19 @@ ECHO_T=''
 EGREP='/usr/bin/grep -E'
 ENABLE_COMPATIBLE_CDS_ALIGNMENT=''
 ENABLE_FALLBACK_LINKER=''
-ENABLE_FULL_DOCS=''
+ENABLE_FULL_DOCS='false'
 ENABLE_GENERATE_CLASSLIST=''
-ENABLE_HEADLESS_ONLY=''
+ENABLE_HEADLESS_ONLY='false'
 ENABLE_HSDIS_BUNDLING=''
 ENABLE_JAVAC_SERVER=''
 ENABLE_LIBFFI_BUNDLING=''
-ENABLE_LINKTIME_GC=''
+ENABLE_LINKTIME_GC='false'
 ENABLE_PANDOC='false'
 EXCLUDE_TRANSLATIONS=''
-EXECUTABLE_SUFFIX=''
+EXECUTABLE_SUFFIX='.exe'
 EXEEXT=''
 EXPR='/usr/bin/expr'
-EXTERNAL_BUILDJDK=''
+EXTERNAL_BUILDJDK='false'
 EXTRA_ASFLAGS=''
 EXTRA_CFLAGS=''
 EXTRA_CXXFLAGS=''
@@ -732,7 +860,7 @@ FIND='/usr/bin/find'
 FIND_DELETE='-delete'
 FIXPATH='/d/git/jdk21-vista/build/windows-x86_64-server-release/fixpath exec'
 FIXPATH_BASE='/d/git/jdk21-vista/build/windows-x86_64-server-release/fixpath'
-FLOCK=''
+FLOCK='/usr/bin/flock'
 FONTCONFIG_CFLAGS=''
 FREETYPE_CFLAGS=''
 FREETYPE_LIBS=''
@@ -763,7 +891,7 @@ HOTSPOT_TARGET_LIBC='default'
 HOTSPOT_TARGET_OS='windows'
 HOTSPOT_TARGET_OS_TYPE='windows'
 HOTSPOT_TOOLCHAIN_TYPE=''
-HOTSPOT_VM_DISTRO=''
+HOTSPOT_VM_DISTRO='OpenJDK'
 HSDIS_BACKEND=''
 HSDIS_CFLAGS=''
 HSDIS_LDFLAGS=''
@@ -782,16 +910,16 @@ IMPORT_MODULES_MAN=''
 IMPORT_MODULES_SRC=''
 INCLUDE_COMPILER2=''
 INCLUDE_JVMCI=''
-INCLUDE_SA=''
+INCLUDE_SA='true'
 INSTALL_NAME_TOOL=''
-ISO_8601_FORMAT_STRING=''
-IS_GNU_DATE=''
-IS_GNU_TIME=''
-JAR=''
-JAVA=''
-JAVAC=''
+ISO_8601_FORMAT_STRING='%Y-%m-%dT%H:%M:%SZ'
+IS_GNU_DATE='yes'
+IS_GNU_TIME='yes'
+JAR='/d/git/jdk21-vista/build/windows-x86_64-server-release/fixpath exec /c/progra~1/java/jdk-21~1.9-h/bin/jar.exe'
+JAVA='/d/git/jdk21-vista/build/windows-x86_64-server-release/fixpath exec /c/progra~1/java/jdk-21~1.9-h/bin/java.exe'
+JAVAC='/d/git/jdk21-vista/build/windows-x86_64-server-release/fixpath exec /c/progra~1/java/jdk-21~1.9-h/bin/javac.exe'
 JAVAC_CHECK=''
-JAVADOC=''
+JAVADOC='/d/git/jdk21-vista/build/windows-x86_64-server-release/fixpath exec /c/progra~1/java/jdk-21~1.9-h/bin/javadoc.exe'
 JAVA_CHECK=''
 JAVA_FLAGS=''
 JAVA_FLAGS_BIG=''
@@ -804,20 +932,20 @@ JCOV_INPUT_JDK=''
 JDKEXE_LIBS=''
 JDKLIB_LIBS=''
 JDK_ARCH_ABI_PROP_NAME=''
-JDK_RC_COMPANY_NAME=''
-JDK_RC_NAME=''
-JDK_RC_PLATFORM_NAME=''
-JDK_SOURCE_TARGET_VERSION=''
+JDK_RC_COMPANY_NAME='N/A'
+JDK_RC_NAME='OpenJDK Platform'
+JDK_RC_PLATFORM_NAME='Platform'
+JDK_SOURCE_TARGET_VERSION='21'
 JIB_HOME=''
-JLINK=''
-JLINK_KEEP_PACKAGED_MODULES=''
+JLINK='/d/git/jdk21-vista/build/windows-x86_64-server-release/fixpath exec $(JDK_OUTPUTDIR)/bin/jlink'
+JLINK_KEEP_PACKAGED_MODULES='true'
 JMH_COMMONS_MATH_JAR=''
 JMH_CORE_JAR=''
 JMH_GENERATOR_JAR=''
 JMH_JOPT_SIMPLE_JAR=''
 JMH_VERSION=''
-JMOD=''
-JMOD_COMPRESS=''
+JMOD='/d/git/jdk21-vista/build/windows-x86_64-server-release/fixpath exec $(JDK_OUTPUTDIR)/bin/jmod'
+JMOD_COMPRESS='zip-6'
 JOBS=''
 JTREGEXE=''
 JTREG_JDK=''
@@ -834,7 +962,7 @@ JVM_LDFLAGS=''
 JVM_LIBS=''
 JVM_VARIANTS='server'
 JVM_VARIANT_MAIN='server'
-LAUNCHER_NAME=''
+LAUNCHER_NAME='openjdk'
 LCMS_CFLAGS=''
 LCMS_LIBS=''
 LD=''
@@ -865,9 +993,9 @@ LS='/usr/bin/ls'
 LSAN_ENABLED=''
 LSB_RELEASE=''
 LTLIBOBJS=''
-MACOSX_BUNDLE_BUILD_VERSION=''
-MACOSX_BUNDLE_ID_BASE=''
-MACOSX_BUNDLE_NAME_BASE=''
+MACOSX_BUNDLE_BUILD_VERSION='0'
+MACOSX_BUNDLE_ID_BASE='net.java.openjdk-internal'
+MACOSX_BUNDLE_NAME_BASE='OpenJDK'
 MACOSX_CODESIGN_IDENTITY=''
 MACOSX_CODESIGN_MODE=''
 MACOSX_VERSION_MAX=''
@@ -890,7 +1018,7 @@ NUM_CORES=''
 OBJCOPY=''
 OBJDUMP=''
 OBJEXT=''
-OBJ_SUFFIX=''
+OBJ_SUFFIX='.obj'
 OPENJDK_BUILD_ABI='default'
 OPENJDK_BUILD_ADLC_LANGSTD_CXXFLAGS=''
 OPENJDK_BUILD_AUTOCONF_NAME='x86_64-pc-msys'
@@ -939,9 +1067,9 @@ OPENJDK_TARGET_OS_INCLUDE_SUBDIR='win32'
 OPENJDK_TARGET_OS_TYPE='windows'
 OPENJDK_TARGET_OS_UPPERCASE='WINDOWS'
 ORIGINAL_PATH='/usr/local/bin:/usr/bin:/bin:/opt/bin:/c/Windows/System32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0/:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl'
-OS_VERSION_MAJOR=''
-OS_VERSION_MICRO=''
-OS_VERSION_MINOR=''
+OS_VERSION_MAJOR='3'
+OS_VERSION_MICRO='3'
+OS_VERSION_MINOR='5'
 OTOOL=''
 OUTPUTDIR='/d/git/jdk21-vista/build/windows-x86_64-server-release'
 OUTPUT_SYNC='none'
@@ -964,11 +1092,11 @@ PNG_LIBS=''
 POTENTIAL_CC=''
 POTENTIAL_CXX=''
 PRINTF='printf'
-PRODUCT_NAME=''
-PRODUCT_SUFFIX=''
+PRODUCT_NAME='OpenJDK'
+PRODUCT_SUFFIX='Runtime Environment'
 RC=''
 RCFLAGS=''
-READELF=''
+READELF='/usr/bin/readelf'
 READLINK='/usr/bin/readlink'
 REAL_CONFIGURE_COMMAND_EXEC_FULL=''
 REAL_CONFIGURE_COMMAND_EXEC_SHORT=''
@@ -986,19 +1114,19 @@ SET_SHARED_LIBRARY_MAPFILE=''
 SET_SHARED_LIBRARY_NAME=''
 SET_SHARED_LIBRARY_ORIGIN=''
 SH='/usr/bin/sh'
-SHARED_LIBRARY=''
+SHARED_LIBRARY='$1.dll'
 SHARED_LIBRARY_FLAGS=''
-SHARED_LIBRARY_SUFFIX=''
+SHARED_LIBRARY_SUFFIX='.dll'
 SHELL='/usr/bin/bash'
 SHIP_DEBUG_SYMBOLS=''
 SORT='/usr/bin/sort'
-SOURCE_DATE=''
-SOURCE_DATE_ISO_8601=''
+SOURCE_DATE='1721452140'
+SOURCE_DATE_ISO_8601='2024-07-20T05:09:00Z'
 SPEC='/d/git/jdk21-vista/build/windows-x86_64-server-release/spec.gmk'
-STAT=''
-STATIC_BUILD=''
-STATIC_LIBRARY=''
-STATIC_LIBRARY_SUFFIX=''
+STAT='/usr/bin/stat'
+STATIC_BUILD='false'
+STATIC_LIBRARY='$1.lib'
+STATIC_LIBRARY_SUFFIX='.lib'
 STATIC_LIBS_CFLAGS=''
 STRIP=''
 STRIPFLAGS=''
@@ -1012,9 +1140,9 @@ TAR_SUPPORTS_TRANSFORM='true'
 TAR_TYPE='gnu'
 TEE='/usr/bin/tee'
 TEST_JOBS=''
-TIME=''
+TIME='time'
 TOOLCHAIN_PATH=''
-TOOLCHAIN_TYPE=''
+TOOLCHAIN_TYPE='microsoft'
 TOOLCHAIN_VERSION=''
 TOPDIR='/d/git/jdk21-vista'
 TOUCH='/usr/bin/touch'
@@ -1026,8 +1154,8 @@ UCRT_DLL_DIR=''
 ULIMIT=''
 UNAME='/usr/bin/uname'
 UNIQ='/usr/bin/uniq'
-UNLIMITED_CRYPTO=''
-UNZIP=''
+UNLIMITED_CRYPTO='true'
+UNZIP='/usr/bin/unzip'
 USERNAME='User'
 USE_EXTERNAL_HARFBUZZ=''
 USE_EXTERNAL_LCMS=''
@@ -1039,29 +1167,29 @@ USE_PRECOMPILED_HEADER=''
 VALID_JVM_FEATURES=''
 VALID_JVM_VARIANTS='server client minimal core zero custom'
 VCRUNTIME_1_DLL=''
-VENDOR_URL=''
-VENDOR_URL_BUG=''
-VENDOR_URL_VM_BUG=''
+VENDOR_URL='https://openjdk.org/'
+VENDOR_URL_BUG='https://bugreport.java.com/bugreport/'
+VENDOR_URL_VM_BUG='https://bugreport.java.com/bugreport/crash.jsp'
 VENDOR_VERSION_STRING=''
 VERSION_BUILD=''
-VERSION_CLASSFILE_MAJOR=''
-VERSION_CLASSFILE_MINOR=''
-VERSION_DATE=''
-VERSION_DOCS_API_SINCE=''
-VERSION_EXTRA1=''
-VERSION_EXTRA2=''
-VERSION_EXTRA3=''
-VERSION_FEATURE=''
-VERSION_INTERIM=''
-VERSION_IS_GA=''
-VERSION_NUMBER=''
-VERSION_NUMBER_FOUR_POSITIONS=''
-VERSION_OPT=''
-VERSION_PATCH=''
-VERSION_PRE=''
-VERSION_SHORT=''
-VERSION_STRING=''
-VERSION_UPDATE=''
+VERSION_CLASSFILE_MAJOR='65'
+VERSION_CLASSFILE_MINOR='0'
+VERSION_DATE='2024-07-16'
+VERSION_DOCS_API_SINCE='11'
+VERSION_EXTRA1='0'
+VERSION_EXTRA2='0'
+VERSION_EXTRA3='0'
+VERSION_FEATURE='21'
+VERSION_INTERIM='0'
+VERSION_IS_GA='false'
+VERSION_NUMBER='21.0.4'
+VERSION_NUMBER_FOUR_POSITIONS='21.0.4.0'
+VERSION_OPT='adhoc.User.jdk21-vista'
+VERSION_PATCH='0'
+VERSION_PRE='internal'
+VERSION_SHORT='21.0.4-internal'
+VERSION_STRING='21.0.4-internal-adhoc.User.jdk21-vista'
+VERSION_UPDATE='4'
 WARNINGS_AS_ERRORS=''
 WC='/usr/bin/wc'
 WHOAMI='/usr/bin/whoami'
@@ -1078,7 +1206,7 @@ X_CFLAGS=''
 X_EXTRA_LIBS=''
 X_LIBS=''
 X_PRE_LIBS=''
-ZIPEXE=''
+ZIPEXE='/usr/bin/zip'
 ZIP_EXTERNAL_DEBUG_SYMBOLS=''
 ac_ct_CC=''
 ac_ct_CXX=''

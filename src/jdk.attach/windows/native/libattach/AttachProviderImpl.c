@@ -22,6 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
+ 
+#define PSAPI_VERSION 1
+
 #include <windows.h>
 #include <stdlib.h>
 #include <string.h>

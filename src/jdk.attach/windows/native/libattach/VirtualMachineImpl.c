@@ -25,6 +25,8 @@
 
 #include "jni_util.h"
 
+#define PSAPI_VERSION 1
+
 #include <windows.h>
 #include <Sddl.h>
 #include <string.h>

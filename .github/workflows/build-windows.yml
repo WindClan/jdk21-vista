@@ -133,6 +133,7 @@ jobs:
           ${{ inputs.extra-conf-options }} ${{ inputs.configure-arguments }} || (
           echo "Dumping config.log:" &&
           cat config.log &&
+          export CPPFLAGS="-DPSAPI_VERSION=1"
           exit 1)
         env:
           # We need a minimal PATH on Windows

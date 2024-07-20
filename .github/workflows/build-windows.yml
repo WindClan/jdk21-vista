@@ -105,7 +105,7 @@ jobs:
         id: toolchain-check
         run: |
           set +e
-          '/c/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/vc/auxiliary/build/vcvars64.bat' -vcvars_ver=${{ inputs.msvc-toolset-version }}
+          '/c/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/vc/auxiliary/build/vcvars64.bat' -vcvars_ver=140
           if [ $? -eq 0 ]; then
             echo "Toolchain is already installed"
             echo "toolchain-installed=true" >> $GITHUB_OUTPUT

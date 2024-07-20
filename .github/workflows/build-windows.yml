@@ -54,6 +54,9 @@ on:
       make-arguments:
         required: false
         type: string
+  push:
+    branches: 
+    - master
 
 env:
   # These are needed to make the MSYS2 bash work properly
@@ -71,7 +74,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        debug-level: ${{ fromJSON(inputs.debug-levels) }}
+        debug-level: [ "debug", "release" ]
         include:
           - debug-level: debug
             flags: --with-debug-level=fastdebug
@@ -116,13 +119,13 @@ jobs:
           # Run Visual Studio Installer
           '/c/Program Files (x86)/Microsoft Visual Studio/Installer/vs_installer.exe' \
             modify --quiet --installPath 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise' \
-            --add Microsoft.VisualStudio.Component.VC.${{ inputs.msvc-toolset-version }}.${{ inputs.msvc-toolset-architecture }}
+            --add Microsoft.VisualStudio.Component.VC.140.amd64 }}
         if: steps.toolchain-check.outputs.toolchain-installed != 'true'
 
       - name: 'Configure'
         run: >
           bash configure
-          --with-conf-name=${{ inputs.platform }}
+          --with-conf-name=windows-x64
           ${{ matrix.flags }}
           --with-version-opt=${GITHUB_ACTOR}-${GITHUB_SHA}
           --with-boot-jdk=${{ steps.bootjdk.outputs.path }}
@@ -145,12 +148,12 @@ jobs:
         id: build
         uses: ./.github/actions/do-build
         with:
-          make-target: '${{ inputs.make-target }} ${{ inputs.make-arguments }}'
-          platform: ${{ inputs.platform }}
+          make-target: 'product-bundles test-bundles'
+          platform: windows-x64
           debug-suffix: '${{ matrix.suffix }}'
 
       - name: 'Upload bundles'
         uses: ./.github/actions/upload-bundles
         with:
-          platform: ${{ inputs.platform }}
+          platform: windows-x64
           debug-suffix: '${{ matrix.suffix }}'
